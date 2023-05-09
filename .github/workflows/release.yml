@@ -29,11 +29,6 @@ jobs:
 
       - name: Fetch local action
         uses: actions/checkout@v3
-        with:
-          repository: "Prajwal-Neu/react-test-pipeline"
-          path: ./.github/actions
-
-      - name: Run Local Action with Input
         uses: ./.github/actions/teams-notifcation-v3
         with:
           milliseconds: 1000
