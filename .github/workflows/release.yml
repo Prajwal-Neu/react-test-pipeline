@@ -15,7 +15,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+
       - name: Run Local Action with Input
-        uses: ./.github/actions/my-action/
+        uses: Prajwal-Neu/teams-notifcation-v3@main
         with:
           milliseconds: 1000
