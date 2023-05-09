@@ -27,9 +27,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Fetch local action
-        uses: actions/checkout@v3
-
       - name: Run Local Action with Input
         uses: ./.github/actions/teams-notifcation-v3
         with:
